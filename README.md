@@ -29,63 +29,70 @@ Now with support for Chinese, Japanese and Korean character encoding. Setup is o
 	<tr>
 		<th>Classic</th>
 		<th>Modern</th>
-		<th>Two Columns</th>
+		<th>Minimalistic</th>
 	</tr>
 	<tr>
 		<td width="33%">
 			<img src="docs/media/classic.png" 
 				alt="Classic CV example preview" />
+				<a href="https://www.overleaf.com/latex/templates/jan-kusters-classic-cv/tvghvdsffwgs">Edit on overleaf</a>
 		</td>
 		<td width="33%">
 			<img src="docs/media/modern.png" 
 				alt="Modern CV example preview" />
+				<a href="https://www.overleaf.com/latex/templates/jan-kusters-modern-cv/kbfxhgjtxhgh">Edit on overleaf</a>
 		</td>
 		<td width="33%">
-			<img src="docs/media/two_column.png" 
-				alt="Two Column CV example preview" />
+			<img src="docs/media/minimal.png" 
+				alt="Minimalistic Layout CV example preview" />
 		</td>
 	</tr>
 </table>
 
 <table width="100%" margin-left="auto" margin-right="auto">
 	<tr>
+		<th>Two Columns</th>
    	    	<th>Sidebar</th>
-       		<th>Sidebar Left</th>
-       		<th>Row Layout</th>
+       	<th>Sidebar Left</th>
 	</tr>
 	<tr>
 		<td width="33%">
+			<img src="docs/media/two_column.png" 
+				alt="Two Column CV example preview" />
+				<a href="https://www.overleaf.com/latex/templates/jan-kusters-two-column-cv/mgdkqgdcktjv">Edit on overleaf</a>
+		</td>
+		<td width="33%">
     			<img src="docs/media/sidebar.png" 
     				alt="Sidebar CV example preview" />
+				<a href="https://www.overleaf.com/latex/templates/sidebar-cv/kssfdykmmdvz">Edit on overleaf</a>
     		</td>
 		<td width="33%">
     			<img src="docs/media/sidebarleft.png"
     				alt="Left sidebar CV example preview" />
+				<a href="https://www.overleaf.com/latex/templates/jan-kusters-left-sidebar-cv/tmmnhrkcmpgv">Edit on overleaf</a>
     		</td>
-    		<td width="33%">
-    			<img src="docs/media/rows.png"
-    		    		alt="Row-Layout CV example preview" />
-            	</td>
 	</tr>
 </table>
 
 <table width="100%" margin-left="auto" margin-right="auto">
 	<tr>
+   		<th>Row Layout</th>
 		<th>Infographics</th>
-    		<th>Infographics 2 EN</th>
-    		<th>Infographics 2 FR</th>
+    		<th>Infographics 2</th>
 	</tr>
 	<tr>
 		<td width="33%">
+			<img src="docs/media/rows.png"
+    		    		alt="Row-Layout CV example preview" />
+				<a href="https://www.overleaf.com/latex/templates/jan-kusters-row-layout-cv/pdjxrdkpddzq">Edit on overleaf</a>
+		</td>
+		<td width="33%">
 			<img src="docs/media/infographics.png" 
 				alt="Infographics CV example preview" />
+				<a href="https://www.overleaf.com/latex/templates/infographics-cv/hdgkztmhztph">Edit on overleaf</a>
 		</td>	  
 		<td width="33%">
 			<img src="docs/media/infographics2_en.png" 
-				alt="Infographics CV example preview" />
-		</td>
-		<td width="33%">
-		      <img src="docs/media/infographics2_fr.png" 
 				alt="Infographics CV example preview" />
 		</td>
 	</tr>
@@ -94,17 +101,35 @@ Now with support for Chinese, Japanese and Korean character encoding. Setup is o
 
 **Great first impression**
 
-Point out with a progressive layout. Give decision makers and HR only the most important information about you on one single page.
+Stand out with a pixel-perfect layout. Give decision makers and HR only most important information about you in one single page
+or provide a complete and extensive full curriculum viate.
 
 **Beginner friendly**
 
-Pick a template, replace the content, compile, done. If that's not enough you can easily customize colors, fonts and layout. The templates are documented directly in the code. 
+Pick a template, replace the content, compile, done. If that's not enough you can easily customize colors, fonts and layout. The templates are documented directly in the code.
 
 **Minimal environment**
 
-You need a minimal tex-live distribution to compile the templates. No XeTeX or LuaTeX required. No other SDKs or environments required.
+You need a minimal tex-live distribution to compile the templates. **No XeTeX, Koma or LuaTeX required.** No other SDKs or environments required.
 
 ## How to build?
+
+There are multiple ways to build your very own version of these templates.
+
+### Using Overleaf
+
+Most of the templates are also available on [Overleaf](https://overleaf.com), an 
+online LaTeX editing and publishing tool.
+
+Just pick one and start editing without any local installation required:
+
+- <a href="https://www.overleaf.com/latex/templates/jan-kusters-classic-cv/tvghvdsffwgs">Classic</a>
+- <a href="https://www.overleaf.com/latex/templates/jan-kusters-modern-cv/kbfxhgjtxhgh">Modern</a>
+- <a href="https://www.overleaf.com/latex/templates/jan-kusters-two-column-cv/mgdkqgdcktjv">Two Column</a>
+- <a href="https://www.overleaf.com/latex/templates/sidebar-cv/kssfdykmmdvz">Sidebar</a>
+- <a href="https://www.overleaf.com/latex/templates/jan-kusters-left-sidebar-cv/tmmnhrkcmpgv">Left sidebar</a>
+- <a href="https://www.overleaf.com/latex/templates/jan-kusters-row-layout-cv/pdjxrdkpddzq">Row Layout</a>
+- <a href="https://www.overleaf.com/latex/templates/infographics-cv/hdgkztmhztph">Infographics</a>
 
 ### Using Docker
 
