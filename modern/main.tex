@@ -28,7 +28,7 @@
 %
 %============================================================================%
 
-%we use article class because we want to fully customize the page and don't use a cv template
+%we use article class because we want to fully customize the page and dont use a cv template
 \documentclass[10pt,A4]{article}	
 
 
@@ -88,12 +88,12 @@
 \pagestyle{fancy}
 
 %less space between header and content
-\setlength{\headheight}{-5pt}		
+\setlength{\headheight}{2pt}		
 
 
 %customize entries left, center and right
 \lhead{}
-\chead{ \small{Cenas  $\cdot$ Consultant de cenas $\cdot$  Bremen, Germany  $\cdot$  \textcolor{sectcol}{\textbf{info@jankuester.com}}  $\cdot$ +49 176 *** *** **}}
+\chead{ \small{Diogo Baltazar  $\cdot$ Senior BI Specialist $\cdot$  Lisbon, Portugal  $\cdot$  \textcolor{sectcol}{\textbf{diogo.baltazar@hotmail.com}}  $\cdot$ +351 912 143 186}}
 \rhead{}
 
 
@@ -140,10 +140,10 @@
 \usepackage{color}
 
 %accent color
-\definecolor{sectcol}{RGB}{255,150,0}
+\definecolor{sectcol}{RGB}{0,128,255}
 
 %dark background color
-\definecolor{bgcol}{RGB}{110,110,110}
+\definecolor{bgcol}{RGB}{120,120,120}
 
 %light background / accent color
 \definecolor{softcol}{RGB}{225,225,225}
@@ -164,7 +164,7 @@
 % remove top header line
 \renewcommand{\headrulewidth}{0pt} 
 
-%remove bottom header line
+%remove botttom header line
 \renewcommand{\footrulewidth}{0pt}	  	
 
 %remove pagenum
@@ -177,7 +177,7 @@
 % 	ARROW GRAPHICS in Tikz
 %----------------------------------------------------------------------------------------
 
-% a six pointed arrow pointing to the left
+% a six pointed arrow poiting to the left
 \newcommand{\tzlarrow}{(0,0) -- (0.2,0) -- (0.3,0.2) -- (0.2,0.4) -- (0,0.4) -- (0.1,0.2) -- cycle;}	
 
 % include the left arrow into a tikz picture
@@ -189,7 +189,7 @@
  \end{tikzpicture}
 }
 
-% a six pointed arrow pointing to the right
+% a six pointed arrow poiting to the right
 \newcommand{\tzrarrow}{ (0,0.2) -- (0.1,0) -- (0.3,0) -- (0.2,0.2) -- (0.3,0.4) -- (0.1,0.4) -- cycle;}
 
 % include the right arrow into a tikz picture
@@ -239,7 +239,7 @@
 % param 4:	what was your position
 % param 5:	some words about your contributions
 %
-\newcommand{\cvevent}[5]
+\newcommand{\cvevent}[6]
 {
 \vspace{8pt}
 	\begin{tabular*}{1\textwidth}{p{2.3cm}  p{10.8cm} x{3.9cm}}
@@ -251,7 +251,41 @@
 \vspace{6pt}
 	\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
 &		 \larrow{bgcol}  #4\\[3pt]
-&		 \larrow{bgcol}  #5\\[6pt]
+&		 \larrow{bgcol}  #5\\[3pt]
+&		 \larrow{bgcol}  #6\\[6pt]
+	\end{tabular*}
+
+}
+
+%
+\newcommand{\cveventeducation}[3]
+{
+\vspace{8pt}
+	\begin{tabular*}{1\textwidth}{p{2.3cm}  p{10.8cm} x{3.9cm}}
+ \textcolor{bgcol}{#1}& \textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
+
+	\end{tabular*}
+\vspace{-12pt}
+\textcolor{softcol}{\hrule}
+\vspace{6pt}
+	\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
+	\end{tabular*}
+
+}
+
+%
+\newcommand{\cveventeducationn}[4]
+{
+\vspace{8pt}
+	\begin{tabular*}{1\textwidth}{p{2.3cm}  p{10.8cm} x{3.9cm}}
+ \textcolor{bgcol}{#1}& \textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
+
+	\end{tabular*}
+\vspace{-12pt}
+\textcolor{softcol}{\hrule}
+\vspace{6pt}
+	\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
+&		 \larrow{bgcol}  #4\\[3pt]
 	\end{tabular*}
 
 }
@@ -303,7 +337,7 @@
 %}}
 
 % use this for single words, e.g. CV or RESUME etc.
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\HUGE{\textcolor{white}{\textsc{Jan Küster}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{Resume}} } }}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\HUGE{\textcolor{white}{\textsc{Diogo Baltazar}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{Resume}} } }}
 
 
 %----------------------------------------------------------------------------------------
@@ -312,7 +346,7 @@
 
 \begin{figure}[H]
 \begin{flushright}
-	\includegraphics[trim= 320 130 460 210,clip,width=0.2\linewidth]{myfoto.jpg}	%trimming relative to image size!
+\includegraphics[width=4cm, height=4cm,keepaspectratio]{myrealfoto.jpg}
 \end{flushright}
 \end{figure}
 
@@ -331,10 +365,10 @@
 
 \vspace{-114pt}
 
-\metasection{Status:}{M.Sc. Digital Media, Fullstack JS Engineer}
-\metasection{Fields:}{Project Management, Software Development, Consulting} 
-\metasection{Tech:}{Meteor, Javascript, Bootstrap, Mongodb, Git, Webstorm, Sourcetree}
-\metasection{Loves:}{Global Game Jam, Sci-Fi series, Stackoverflow, Fitness and Martial Arts}
+\metasection{Status:}{Senior BI Specialist}
+\metasection{Fields:}{Business Analysis, Consulting} 
+\metasection{Tech:}{PowerBI, SQL, Azure Data Factory}
+\metasection{Hobbies:}{Padel, Crossfit, Videogames}
 
 \vspace{6pt}
 
@@ -359,61 +393,74 @@
 \cvsection{Experience}
 
 %
-\cvevent{2016 / 09}{Fullstack Javascript Engineer}{University of Bremen}{Invent a realtime classroom management using Meteor and React}{Design software architecture and leading development}
+\cvevent{Today - 2022}{Senior BI Specialist}{DSV - Global Transport and Logistics}{Business requirement analysis}{Development of business support PowerBI Dashboards}{DAX queries in Power BI Desktop and SSAS Tabular model}{SQL scripts for KPI, SP and View designs}{Design and maintenance of Azure Data Factory pipelines}{Led the successful adoption of JIRA in my current project}
+
+%
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{2014 - 2016}{IT Consultant for IBM XPages and Notes Domino}{We4IT GmbH Bremen}{Realize projects in XPages and We4IT Aveedo, monitor project status, conduct reports}{Integrated Camunda BPMN engine and BPMN.IO modeler in We4IT Aveedo}
+\cvevent{2022 - 2020}{Data Analytics Consultant}{Celfocus}{Data migration project in telecom sector, mapping and validating legacy sources around the new cloud environment}{Development of GCP Big Query scripts for data warehousing and KPI design}{Design and build of PowerBI dashboards}
+
+%
+
+%\textcolor{softcol}{\hrule}
+
+%
+\cvevent{2020 - 2018}{Business Intelligence Consultant}{bi4all}{Worked in an Agile environment in the pharmaceuticals sector}{Developed Amazon Redshift scripts, Talend workflows and validated QlikSense dashboards}{Designed, developed and tested an end-to-end data warehouse solution with Alteryx and dashboard design with Tableau}
 
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{2012 - 2014}{Scientific Employee / Software Development}{University of Bremen}{Invented a flexible assessment framework, targeting industrial trainees}{Supervised software development lifecycle, Recruited team members}
+\cvevent{2018 - 2016}{Business Analyst}{VTXRM}{Analyse and document business requirements, support the technical team with the software configuration}{Release management and design of SQL scripts for batch validation}{Ensure the proper functioning of the new software features}
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{2011 / 11}{Project Management Simulation Training}{Getoq Consulting}{Performed a two-day project simulation from management perspective}{Topics included customer contracts, change management, controlling, operational tasks}
+\cvevent{2016 - 2015}{Analyst Implementation Consultant}{Unit4}{Analyse and document business requirements, support the technical team with the software configuration}{Build a global template solution to speed up new client implementations}{Identify and solve customer environment issues}
 
 %\textcolor{softcol}{\hrule}
 
 
 %
-\cvevent{2010 - 2011}{Student Assistant / Programmer}{otulea.uni-bremen.de}{Realized an online diagnosis platform for workforce literacy development (Flex)}{Modeled software design, implemented various prototypes, conducted usability tests}
+\cvevent{2015 - 2013}{Accountant}{Media, Hospitality and Insurance sectors}{Management of client credit guarantees}{Preparation of financial statements, supporting the company’s financial analysis}{Intercompany billing}
 
+
+\newpage
 
 %---------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %--------------------------------------------------------------------------------------
 \cvsection{Education}
 
-\cvevent{2015 / 07}{Graduated as M.Sc. Digital Media}{University of Bremen}{Master Thesis: Semi Automated Scoring in Technology Based Assessment}{Developed and evaluated an algorithm for semi automated scoring of spreadsheet data}
+\cveventeducationn{2016 - 2018}{Post Graduation in Information Management}{NOVA IMS}{Major in Business Intelligence}
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{2012 - 2013}{Master Project - PrIMA}{University of Bremen}{Co-Invented a touch table application for medical support, co-developed software (Java) }{Formed a scrum team, mainted project dev server (Debian), surveyed target audience}
+\cveventeducation{2010 - 2013}{Bachelor Degree in Business Administration}{University of the Algarve}
 
-%\textcolor{softcol}{\hrule}
 
-%
-\cvevent{2012 - 2015}{Master Studies Digital Media}{University of Bremen}{Inter-cultural classes in English, covering special topics in computer science and design}{Professionalized in research methods, software development and e-assessment}
+%---------------------------------------------------------------------------------------
+%	CERTIFICATIONS SECTION
+%--------------------------------------------------------------------------------------
+\cvsection{Certifications}
 
-%\textcolor{softcol}{\hrule}
+\cveventeducation{2020}{AWS Certified Cloud Practitioner}{Amazon Web Services}
 
-%
-\cvevent{2009 - 2010}{Semester Abroad}{University of Melbourne}{Mastered six months of study and trans-cultural experience in Melbourne, Australia}{Finished machine programming, information visualization, professional essay writing}
+\cveventeducation{2018}{Alteryx Designer Core}{Alteryx}
 
+\cveventeducation{2015}{First Certificate in English - B2}{Cambridge English Language Assessment}
 
 %-------------------------------------------------------------------------------------------------
 %	ARTIFICIAL FOOTER (fancy footer cannot exceed linewidth) 
 %--------------------------------------------------------------------------------------------------
 
 \null
-\vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{www.jankuester.com} $\cdot$ \textcolor{white}{github.com/jankapunkt}}}
+%\vspace*{\fill}
+\vspace*{527pt}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{Diogo Baltazar} $\cdot$ \textcolor{white}{linkedin.com/in/diogo-baltazar-1904}}}
 
 
 
